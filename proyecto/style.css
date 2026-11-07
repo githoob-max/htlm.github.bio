@@ -1,0 +1,368 @@
+/* ==========================================
+   VARIABLES Y CONFIGURACIÓN GENERAL
+   ========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@400;600;800;900&display=swap');
+
+:root {
+    --bg-dark: #0d0614;
+    --yellow-neon: #ffee00;
+    --magenta-neon: #ff0055;
+    --cyan-neon: #00f0ff;
+    --purple-dinelco: #6b00ff;
+    --text-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    overflow-x: hidden;
+}
+
+/* ==========================================
+   HERO / ENCABEZADO ESTRAFALARIO
+   ========================================== */
+.hero {
+    background: linear-gradient(135deg, var(--purple-dinelco), #1a0033);
+    text-align: center;
+    padding: 45px 20px 30px;
+    border-bottom: 8px solid var(--yellow-neon);
+    position: relative;
+    box-shadow: 0 10px 30px rgba(255, 0, 85, 0.4);
+}
+
+.badge-promo {
+    display: inline-block;
+    background-color: var(--magenta-neon);
+    color: var(--yellow-neon);
+    font-weight: 900;
+    font-size: 1.1rem;
+    padding: 8px 18px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 15px var(--magenta-neon);
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.08);
+    }
+}
+
+.title-main {
+    font-family: 'Black Ops One', cursive;
+    font-size: 2.8rem;
+    margin: 15px 0 5px;
+    color: var(--yellow-neon);
+    text-shadow: 4px 4px 0px var(--magenta-neon), 8px 8px 0px #000;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.title-main span {
+    color: var(--cyan-neon);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+.btn-hero {
+    display: inline-block;
+    background: linear-gradient(45deg, #25d366, #128c7e);
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 15px 35px;
+    border-radius: 40px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 20px #25d366;
+    text-transform: uppercase;
+}
+
+/* ==========================================
+   BANNER TERCERA EDAD / PENSIONADOS
+   ========================================== */
+.banner-pensionados {
+    background: linear-gradient(90deg, #ff9900, #ff0055);
+    color: #fff;
+    padding: 25px 20px;
+    border-bottom: 5px solid var(--cyan-neon);
+}
+
+.pensionados-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.icon-large {
+    font-size: 3.5rem;
+    color: var(--yellow-neon);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--yellow-neon);
+}
+
+.pensionados-content h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--yellow-neon);
+    text-transform: uppercase;
+}
+
+.pensionados-content p {
+    font-size: 1.1rem;
+}
+
+/* ==========================================
+   GRID DE TARJETAS (CARDS)
+   ========================================== */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #140a26;
+    border-radius: 20px;
+    padding: 30px 20px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-tag {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: var(--cyan-neon);
+    color: #000;
+    font-weight: 900;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+/* Estilos de Tarjeta Dinelco */
+.card-dinelco {
+    border: 3px solid var(--purple-dinelco);
+    box-shadow: 0 0 20px rgba(107, 0, 255, 0.5);
+}
+
+.card-dinelco .card-icon {
+    color: var(--purple-dinelco);
+}
+
+/* Estilos de Tarjeta Billeteras */
+.card-billeteras {
+    border: 3px solid var(--cyan-neon);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+}
+
+.card-billeteras .card-icon {
+    color: var(--cyan-neon);
+}
+
+/* Estilos de Tarjeta Técnico */
+.card-tecnico {
+    border: 3px solid var(--magenta-neon);
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.5);
+}
+
+.card-tecnico .card-icon {
+    color: var(--magenta-neon);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--yellow-neon);
+    text-transform: uppercase;
+}
+
+.card-desc {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.service-list {
+    list-style: none;
+}
+
+.service-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-list li i {
+    color: var(--cyan-neon);
+}
+
+.wallet-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.wallet-badges span {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--cyan-neon);
+    color: var(--cyan-neon);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   UBICACIÓN Y CONTACTO
+   ========================================== */
+.location-section {
+    background: linear-gradient(180deg, #140a26 0%, #000 100%);
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 5px solid var(--yellow-neon);
+}
+
+.location-section h2 {
+    font-size: 2rem;
+    color: var(--yellow-neon);
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px var(--yellow-neon);
+}
+
+.location-box {
+    background: rgba(255, 255, 255, 0.05);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px dashed var(--magenta-neon);
+}
+
+.address-title {
+    font-size: 0.9rem;
+    color: #bbb;
+    letter-spacing: 1px;
+}
+
+.address {
+    font-size: 2rem;
+    color: var(--cyan-neon);
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.sub-text {
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-social {
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-wa {
+    background-color: #25d366;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.btn-fb {
+    background-color: #1877f2;
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: #888;
+    border-top: 1px solid #222;
+}
+
+/* ==========================================
+   RESPONSIVO (MEDIA QUERIES)
+   ========================================== */
+@media (max-width: 600px) {
+    .title-main {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .pensionados-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon-large {
+        margin-bottom: 10px;
+    }
+
+    .address {
+        font-size: 1.5rem;
+    }
+}

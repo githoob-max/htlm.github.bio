@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinelco & Servicio Técnico - Alto Verá Perlita</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Encabezado Llamativo -->
+    <header class="hero">
+        <div class="badge-promo">¡ATENCIÓN ALTO VERÁ!</div>
+        <h1 class="title-main">DINELCO <span>&</span> SERVICIO TÉCNICO</h1>
+        <p class="subtitle">Cobranzas, Envíos de Dinero y Reparación de Celulares</p>
+        <a href="#contacto" class="btn-hero"><i class="fa-brands fa-whatsapp"></i> ¡CONSULTA AQUÍ!</a>
+    </header>
+
+    <!-- Banner Destacado: Tercera Edad -->
+    <section class="banner-pensionados">
+        <div class="pensionados-content">
+            <i class="fa-solid fa-person-cane icon-large"></i>
+            <div>
+                <h2>COBRANZA ESPECIAL DE PENSIONADOS</h2>
+                <p>Cobro rápido, seguro y preferencial para la Tercera Edad con el respaldo de <strong>Dinelco</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal (Grid) -->
+    <main class="container">
+
+        <!-- Tarjeta 1: Servicios Dinelco -->
+        <article class="card card-dinelco">
+            <div class="card-tag">Oficial</div>
+            <div class="card-icon"><i class="fa-solid fa-cash-register"></i></div>
+            <h2>Cobranzas Dinelco</h2>
+            <ul class="service-list">
+                <li><i class="fa-solid fa-check"></i> Pago de servicios públicos y privados</li>
+                <li><i class="fa-solid fa-check"></i> Cobro de pensiones y jubilaciones</li>
+                <li><i class="fa-solid fa-check"></i> Transacciones 100% seguras y rápidas</li>
+            </ul>
+        </article>
+
+        <!-- Tarjeta 2: Billeteras Digitales -->
+        <article class="card card-billeteras">
+            <div class="card-tag">Todas las Redes</div>
+            <div class="card-icon"><i class="fa-solid fa-mobile-retro"></i></div>
+            <h2>Giros y Envíos de Dinero</h2>
+            <p class="card-desc">Cargas, retíos y giros para <strong>TODAS LAS BILLETERAS</strong> del país.</p>
+            <div class="wallet-badges">
+                <span>Tigo Money</span>
+                <span>Personal</span>
+                <span>Claro</span>
+                <span>Zimple</span>
+                <span>Wally</span>
+            </div>
+        </article>
+
+        <!-- Tarjeta 3: Servicio Técnico -->
+        <article class="card card-tecnico">
+            <div class="card-tag">Express</div>
+            <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h2>Servicio Técnico de Celulares</h2>
+            <ul class="service-list">
+                <li><i class="fa-solid fa-wrench"></i> Cambio de Pantallas y Baterías</li>
+                <li><i class="fa-solid fa-wrench"></i> Reparación de Puntos de Carga</li>
+                <li><i class="fa-solid fa-wrench"></i> Limpieza y Mantenimiento General</li>
+                <li><i class="fa-solid fa-wrench"></i> Desbloqueos y Software</li>
+            </ul>
+        </article>
+
+    </main>
+
+    <!-- Sección Ubicación / Contacto -->
+    <section class="location-section" id="contacto">
+        <h2><i class="fa-solid fa-location-dot"></i> ¿DÓNDE ENCONTRARNOS?</h2>
+        <div class="location-box">
+            <p class="address-title">DIRECCIÓN Y UBICACIÓN:</p>
+            <p class="address"><strong>Alto Verá - Perlita</strong></p>
+            <p class="sub-text">¡Te esperamos con la mejor atención y rapidez!</p>
+
+            <div class="cta-buttons">
+                <a href="https://wa.me/595984297212
+            " class="btn-social btn-wa"><i class="fa-brands fa-whatsapp"></i> Escríbenos al
+                    WhatsApp</a>
+                <a href="https://facebook.com/" class="btn-social btn-fb"><i class="fa-brands fa-facebook-f"></i>
+                    Visítanos en Facebook</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Dinelco & Asistencia Técnica - Alto Verá Perlita. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
